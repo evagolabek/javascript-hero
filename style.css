@@ -1,0 +1,36 @@
+ 
+body, button, input {
+	font-size: 24px;
+}
+
+body {
+	padding: 40px 40px 40px 40px;
+}
+
+hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.number {
+	width: 40px;
+}
+
+#hero_container {
+	height: 800px;
+}
+
+#hero {
+	position: absolute;
+	top: 900px;
+}
+
+#wall {
+	position: absolute;
+	left: 300px;
+	height: 500px;
+}
+		
+
+
+	
