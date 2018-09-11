@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<div>
+		Name: <input id = "name">
+	</div>
+	<button onclick="show_message() ">Show Message</button>
+	<div id="message"></div>
+	<hr>
+
+
+	<style>
+	 
+	 body, button, input {
+	 	font-size: 24px;
+	 }
+
+	 body {
+	 	padding: 40px 40px 40px 40px;
+	 }
+
+	 hr {
+	 	margin-top: 40px;
+	 	margin-bottom: 40px;
+	 }
+		
+	</style>
+
+	<script>
+
+
+		var show_message = function(){
+
+		var message = "hello";
+
+		var name = document.getElementById("name").value;
+
+		message = message + " " + name + "!";
+
+		document.getElementById("message").innerHTML = message;
+
+		}
+		
+	</script>
+
+</body>
+</html>
