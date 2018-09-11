@@ -9,7 +9,16 @@
 	</div>
 	<button onclick="show_message() ">Show Message</button>
 	<div id="message"></div>
+
 	<hr>
+
+	<div>
+		<input id="number" class="number"> + 
+		<input id="other_number" class="number"> = 
+		<span id="sum"></span>
+	</div>
+
+	<button onclick="add_numbers()">Add Numbers</button>
 
 
 	<style>
@@ -26,10 +35,25 @@
 	 	margin-top: 40px;
 	 	margin-bottom: 40px;
 	 }
+
+	 .number {
+	 	width: 40px;
+	 }
 		
 	</style>
 
 	<script>
+
+		var a = "10";
+		var b = "5";
+
+		a = parseInt(a);
+		b = parseInt(b);
+
+		a = a + b; 
+
+		console.log(a);
+		console.log( typeof a);
 
 
 		var show_message = function(){
@@ -42,6 +66,19 @@
 
 		document.getElementById("message").innerHTML = message;
 
+		}
+
+		var add_numbers = function(){
+
+			var number = document.getElementById("number").value;
+			var other_number = document.getElementById("other_number").value;
+
+			number = parseInt(number);
+			other_number = parseInt(other_number);
+
+			var sum = number + other_number;
+
+			document.getElementById("sum").innerHTML = sum;
 		}
 		
 	</script>
