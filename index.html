@@ -39,7 +39,8 @@
 	<hr>
 
 	<button onclick="hide_hero()">Hide</button>
-	<div>
+	<button onclick="show_hero()">Show</button>
+	<div id="hero_container">
 		<img src="hero.png" id="hero">
 	</div>
 	
@@ -60,6 +61,10 @@
 
 	 .number {
 	 	width: 40px;
+	 }
+
+	 #hero_container {
+	 	height: 800px;
 	 }
 		
 	</style>
@@ -120,6 +125,10 @@
 		var hero = document.getElementById("hero");
 		var hide_hero = function() {
 			hero.style.display = "none";
+		}
+
+		var show_hero = function() {
+			hero.style.display = "";
 		}
 
 	</script>
