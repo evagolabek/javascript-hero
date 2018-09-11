@@ -4,6 +4,7 @@
 	<title>JS</title>
 </head>
 <body>
+	
 	<div>
 		Name: <input id = "name">
 	</div>
@@ -17,10 +18,16 @@
 		<input id="other_number" class="number"> = 
 		<span id="sum"></span>
 	</div>
-
 	<button onclick="add_numbers()">Add Numbers</button>
 
+	<hr>
 
+	<div>
+		Color: <input id="color">
+	</div>
+	<button onclick="change_color()">Change Color</button>
+
+	
 	<style>
 	 
 	 body, button, input {
@@ -58,28 +65,25 @@
 
 
 		var show_message = function(){
-
 		var message = "hello";
-
 		var name = document.getElementById("name").value;
-
 		message = message + " " + name + "!";
-
 		document.getElementById("message").innerHTML = message;
-
 		}
 
-		var add_numbers = function(){
 
+		var add_numbers = function(){
 			var number = document.getElementById("number").value;
 			var other_number = document.getElementById("other_number").value;
-
-			number = parseFloat(number);
+			number = parseFloat(number); 
 			other_number = parseFloat(other_number);
-
 			var sum = number + other_number;
-
 			document.getElementById("sum").innerHTML = sum;
+		}
+
+		var change_color = function(){
+			var color = document.getElementById('color').value;
+			document.body.style.backgroundColor = color;
 		}
 		
 	</script>
