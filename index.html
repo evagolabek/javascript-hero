@@ -31,6 +31,17 @@
 
 	<button onclick="play_castle_theme()">Play Castle Theme</button>
 
+	<hr>
+
+	<button onclick="play_song()">Play a song</button>
+	<button onclick="pause_song()">Pause</button>
+
+	<hr>
+
+	<button onclick="hide_hero()">Hide</button>
+	<div>
+		<img src="hero.png" id="hero">
+	</div>
 	
 	<style>
 	 
@@ -95,6 +106,22 @@
 		var play_castle_theme = function(){
 			castle_theme.play();
 		}
+
+
+		var song = new Audio("BoxCat_Games_-_10_-_Epic_Song.mp3");
+		var play_song = function(){
+			song.play();
+		}
+
+		var pause_song = function(){
+			song.pause();
+		}
+
+		var hero = document.getElementById("hero");
+		var hide_hero = function() {
+			hero.style.display = "none";
+		}
+
 	</script>
 
 </body>
