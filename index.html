@@ -40,8 +40,11 @@
 
 	<button onclick="hide_hero()">Hide</button>
 	<button onclick="show_hero()">Show</button>
+	<button onclick="teleport_hero()">Teleport Hero</button>
+
 	<div id="hero_container">
 		<img src="hero.png" id="hero">
+		<img src="wall.png" id="wall">
 	</div>
 	
 	<style>
@@ -65,6 +68,17 @@
 
 	 #hero_container {
 	 	height: 800px;
+	 }
+
+	 #hero {
+	 	position: absolute;
+	 	top: 900px;
+	 }
+
+	 #wall {
+	 	position: absolute;
+	 	left: 300px;
+	 	height: 500px;
 	 }
 		
 	</style>
@@ -129,6 +143,10 @@
 
 		var show_hero = function() {
 			hero.style.display = "";
+		}
+
+		var teleport_hero = function() {
+			hero.style.marginLeft = "360px";
 		}
 
 	</script>
