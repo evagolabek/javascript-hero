@@ -27,6 +27,10 @@
 	</div>
 	<button onclick="change_color()">Change Color</button>
 
+	<hr>
+
+	<button onclick="play_castle_theme()">Play Castle Theme</button>
+
 	
 	<style>
 	 
@@ -86,6 +90,11 @@
 			document.body.style.backgroundColor = color;
 		}
 		
+		var castle_theme = new Audio("Visager_-_02_-_Castle_Theme.mp3");
+
+		var play_castle_theme = function(){
+			castle_theme.play();
+		}
 	</script>
 
 </body>
